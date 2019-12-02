@@ -1,0 +1,15 @@
+CREATE TABLE emp (
+    id int(11) NOT NULL,
+    name varchar(255) NOT NULL,
+    age int(11) NOT NULL,
+    job varchar(255),
+    PRIMARY KEY (id)
+    )
+
+CREATE TABLE msg (
+oid int(11) NOT NULL,
+email varchar(255),
+qq varchar(255),
+wechat varchar(255),
+PRIMARY KEY (oid)
+)
