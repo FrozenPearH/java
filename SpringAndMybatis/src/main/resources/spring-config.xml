@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+                          http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
+                          http://www.springframework.org/schema/tx
+                          http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+                          http://www.springframework.org/schema/cache
+                          http://www.springframework.org/schema/cache/spring-cache-4.0.xsd">
+
+    <!--组件扫描-->
+    <context:component-scan base-package="com.hand.hlz25720"/>
+    <!--导入jdbc.properties-->
+    <context:property-placeholder  location="jdbc.properties"/>
+
+    <!-- 使用spring批量加载mapper代理-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--mapper接口所在的包名-->
+        <property name="basePackage" value="com.hand.hlz25720.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"  />
+    </bean>
+
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="${jdbc.connection.mysql.url}"/>
+        <property name="username" value="${jdbc.connection.mysql.username}"/>
+        <property name="password" value="${jdbc.connection.mysql.password}"/>
+    </bean>
+
+
+
+
+
+</beans>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.hlz25720.mapper.UserMapper">
+
+    <select id="selectOrderLinesByCondition"  resultType="com.hand.hlz25720.entity.OrderLineQueryResult" parameterType="OrderLineQueryCondition">
+        select orderh.order_number , sysuser.user_name , sysuser.address , orderh.remark ,  orderh.created_by ,
+        orderl.order_line_number , orderl.item_code , orderl.item_name , orderl.unit_price , orderl.line_amount
+        from order_line orderl
+        left join order_header orderh on orderl.order_header_id = orderh.order_header_id
+        left join sys_user sysuser on customer_user_id = user_id
+        <where>
+            <if test="orderNumber!=null">
+                <bind name="orderNumberlike" value="'%'+orderNumber+'%'"/>
+                and orderh.order_number like #{orderNumberlike}
+            </if>
+            <if test="orderLineNumber!=null">
+                and orderl.order_line_number =#{orderLineNumber}
+            </if>
+            <if test="itemCode!=null">
+                <bind name="itemCodelike" value="'%'+itemCode+'%'"/>
+                and orderl.item_code like #{itemCodelike}
+            </if>
+            <if test="itemName!=null">
+                <bind name="itemNamelike" value="'%'+itemName+'%'"/>
+                and orderl.item_name like #{itemNamelike}
+            </if>
+            <if test="createdBy!=null">
+                and orderl.created_by=#{createdBy}
+            </if>
+            <if test="customerUserId!=null">
+                and user_id=#{customerUserId}
+            </if>
+        </where>
+
+    </select>
+    <select id="selectUser" resultType="int">
+        SELECT max(user_id) FROM sys_user
+    </select>
+    <select id="selectUserByNumber" parameterType="String" resultType="Long">
+        SELECT user_id FROM sys_user WHERE user_number = #{value}
+    </select>
+    <insert id="insertUser" parameterType="User">
+        INSERT INTO sys_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userNumber!=null">
+                user_number,
+            </if>
+            <if test="userName!=null">
+                user_name,
+            </if>
+            <if test="address!=null">
+                address,
+            </if>
+            <if test="objectVersionNumber!=null">
+                object_version_number,
+            </if>
+            <if test="creationDate!=null">
+                creation_date,
+            </if>
+            <if test="createdBy!=null">
+                created_by,
+            </if>
+            <if test="lastUpdateDate!=null">
+                last_update_date,
+            </if>
+            <if test="lastUpdatedBy!=null">
+                last_updated_by
+            </if>
+
+        </trim>
+         VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userNumber!=null">
+                #{userNumber},
+            </if>
+            <if test="userName!=null">
+                #{userName},
+            </if>
+            <if test="address!=null">
+                #{address},
+            </if>
+            <if test="objectVersionNumber!=null">
+                #{objectVersionNumber},
+            </if>
+            <if test="creationDate!=null">
+                #{creationDate},
+            </if>
+            <if test="createdBy!=null">
+                #{createdBy},
+            </if>
+            <if test="lastUpdateDate!=null">
+                #{lastUpdateDate},
+            </if>
+            <if test="lastUpdatedBy!=null">
+                #{lastUpdatedBy}
+            </if>
+        </trim>
+    </insert>
+    <update id="updateUser" parameterType="User">
+        UPDATE sys_user SET
+        <trim suffixOverrides=",">
+            <if test="userNumber!=null">
+                user_number = #{userNumber},
+            </if>
+            <if test="userName!=null">
+                user_name = #{userName},
+            </if>
+            <if test="address!=null">
+                address = #{address},
+            </if>
+            <if test="objectVersionNumber!=null">
+                object_version_number = #{objectVersionNumber},
+            </if>
+            <if test="creationDate!=null">
+                creation_date = #{creationDate},
+            </if>
+            <if test="createdBy!=null">
+                created_by = #{createdBy},
+            </if>
+            <if test="lastUpdateDate!=null">
+                last_update_date = #{lastUpdateDate},
+            </if>
+            <if test="lastUpdatedBy!=null">
+                last_updated_by = #{lastUpdatedBy}
+            </if>
+        </trim>
+         WHERE user_id = #{userId}
+    </update>
+    <delete id="deleteUser" parameterType="Long">
+        DELETE FROM sys_user WHERE user_id = #{userId}
+    </delete>
+
+</mapper>
