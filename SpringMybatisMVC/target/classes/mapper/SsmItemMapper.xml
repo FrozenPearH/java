@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.hlz25720.mapper.SsmItemMapper">
+    <resultMap id="BaseResultMap" type="com.hand.hlz25720.bean.SsmItem">
+        <id column="item_id" property="itemId"/>
+        <result column="item_code" property="itemCode"/>
+        <result column="item_uom" property="itemUom"/>
+        <result column="item_description" property="itemDescription"/>
+        <result column="start_active_date" typeHandler="LocalDateTypeHandler" property="startActiveDate"/>
+        <result column="end_active_date" typeHandler="LocalDateTypeHandler" property="endActiveDate"/>
+        <result column="enabled_flag" property="enabledFlag"/>
+        <result column="object_version_number" property="objectVersionNumber"/>
+        <result column="creation_date" typeHandler="LocalDateTypeHandler" property="creationDate"/>
+        <result column="created_by" property="createdBy"/>
+        <result column="last_updated_by" property="lastUpdatedBy"/>
+        <result column="last_update_date" typeHandler="LocalDateTypeHandler" property="lastUpdateDate"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        item_id, item_code, item_uom, item_description, start_active_date, end_active_date, enabled_flag,
+        object_version_number, creation_date, created_by, last_updated_by, last_update_date
+    </sql>
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM ssm_item
+    </select>
+    <select id="selectMaxCode" resultType="String">
+        select MAX(item_code) from ssm_item;
+    </select>
+    <select id="selectItemByCode" parameterType="Integer" resultMap="BaseResultMap">
+        SELECT * FROM ssm_item WHERE item_id = #{itemId}
+    </select>
+    <select id="selectItem" parameterType="com.hand.hlz25720.bean.SsmItem" resultMap="BaseResultMap">
+        SELECT * FROM ssm_item
+        where enabled_flag = #{enabledFlag}
+        <if test="itemCode!=null">
+            <bind name="itemCodelike" value="'%'+itemCode+'%'"/>
+            and item_code like #{itemCodelike}
+        </if>
+        <if test="itemUom!=null">
+            and item_uom =#{itemUom}
+        </if>
+        <if test="itemDescription!=null">
+            <bind name="itemDescriptionlike" value="'%'+itemDescription+'%'"/>
+            and item_description like #{itemDescriptionlike}
+        </if>
+        <if test="startActiveDate!=null">
+            and start_active_date =#{startActiveDate, typeHandler=LocalDateTypeHandler}
+        </if>
+        <if test="endActiveDate!=null">
+            and end_active_date=#{endActiveDate, typeHandler=LocalDateTypeHandler}
+        </if>
+    </select>
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        DELETE FROM ssm_item
+        WHERE item_id = #{itemId}
+    </delete>
+    <delete id="deleteByExample" parameterType="com.hand.hlz25720.bean.Complex">
+        delete from ssm_item
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause" />
+        </if>
+    </delete>
+    <insert id="insertItem" parameterType="com.hand.hlz25720.bean.SsmItem">
+        insert into ssm_item
+
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+        <if test="itemCode != null">
+            item_code,
+        </if>
+        <if test="itemUom != null">
+            item_uom,
+        </if>
+        <if test="itemDescription != null">
+            item_description,
+        </if>
+        <if test="startActiveDate != null">
+            start_active_date,
+        </if>
+        <if test="endActiveDate != null">
+            end_active_date,
+        </if>
+        <if test="enabledFlag != null">
+            enabled_flag,
+        </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+    <if test="itemCode != null">
+        #{itemCode},
+    </if>
+    <if test="itemUom != null">
+        #{itemUom},
+    </if>
+    <if test="itemDescription != null">
+        #{itemDescription},
+    </if>
+    <if test="startActiveDate != null">
+        #{startActiveDate},
+    </if>
+    <if test="endActiveDate != null">
+        #{endActiveDate},
+    </if>
+    <if test="enabledFlag != null">
+        #{enabledFlag},
+    </if>
+    </trim>
+    </insert>
+    <update id="updateByCode" parameterType="com.hand.hlz25720.bean.SsmItem">
+        update ssm_item
+        <set>
+            <if test="itemDescription != null">
+                item_description = #{itemDescription},
+            </if>
+            <if test="itemUom != null">
+                item_uom = #{itemUom},
+            </if>
+            <if test="startActiveDate != null">
+                start_active_date = #{startActiveDate},
+            </if>
+            <if test="endActiveDate != null">
+                end_active_date = #{endActiveDate},
+            </if>
+            <if test="enabledFlag != null">
+                enabled_flag = #{enabledFlag},
+            </if>
+        </set>
+        where item_code = #{itemCode}
+    </update>
+</mapper>

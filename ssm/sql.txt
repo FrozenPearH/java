@@ -1,0 +1,13 @@
+CREATE TABLE tbl_emp (
+emp_id int(11) NOT NULL AUTO_INCREMENT,
+emp_name varchar(255) NOT NULL,
+gender char(1),
+email varchar(255),
+PRIMARY KEY (emp_id)
+)
+
+CREATE TABLE tnl_dept (
+dept_id int(11) NOT NULL AUTO_INCREMENT,
+dept_name varchar(255) NOT NULL,
+PRIMARY KEY (dept_id)
+)
