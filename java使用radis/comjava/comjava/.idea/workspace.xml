@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="37abc9c1-f806-4f2c-a339-42cb7407471d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/SpringAndMybatis.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/java/com/hand/hlz25720/entity/OrderHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/java/com/hand/hlz25720/entity/OrderLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/java/com/hand/hlz25720/entity/OrderLineQueryCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/java/com/hand/hlz25720/entity/OrderLineQueryResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/java/com/hand/hlz25720/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/java/com/hand/hlz25720/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/resources/com/hand/hlz25720/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/main/resources/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/src/test/java/com/hand/hlz25720/UserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/META-INF/SpringAndMybatis.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/com/hand/hlz25720/entity/OrderHeader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/com/hand/hlz25720/entity/OrderLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/com/hand/hlz25720/entity/OrderLineQueryCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/com/hand/hlz25720/entity/OrderLineQueryResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/com/hand/hlz25720/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/com/hand/hlz25720/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/com/hand/hlz25720/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/classes/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/target/test-classes/com/hand/hlz25720/UserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/删除.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/增加.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/更改.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/查询单.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringAndMybatis/查询多.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/src/main/java/com/hand/hlz25720/ProviderApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/src/main/java/com/hand/hlz25720/controller/EmpController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/src/main/java/com/hand/hlz25720/entity/Emp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/src/main/java/com/hand/hlz25720/mapper/EmpMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/target/classes/com/hand/hlz25720/ProviderApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/target/classes/com/hand/hlz25720/controller/EmpController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/target/classes/com/hand/hlz25720/entity/Emp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaClient/target/classes/com/hand/hlz25720/mapper/EmpMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaServer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaServer/src/main/java/com/hand/hlz25720/EurekaServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaServer/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaServer/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/EurekaServer/target/classes/com/hand/hlz25720/EurekaServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/SpringCloudHomework.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/Zuul/Zuul.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/Zuul/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/Zuul/src/main/java/com/hand/hlz25720/ZuulApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/Zuul/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/Zuul/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/Zuul/target/classes/com/hand/hlz25720/ZuulApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/src/main/java/com/hand/hlz25720/FeignApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/src/main/java/com/hand/hlz25720/controller/FeignHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/src/main/java/com/hand/hlz25720/entity/Emp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/src/main/java/com/hand/hlz25720/entity/Msg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/src/main/java/com/hand/hlz25720/feign/FeignProviderClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/src/main/java/com/hand/hlz25720/feign/impl/FeignError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/target/classes/com/hand/hlz25720/FeignApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/target/classes/com/hand/hlz25720/controller/FeignHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/target/classes/com/hand/hlz25720/entity/Emp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/target/classes/com/hand/hlz25720/entity/Msg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/target/classes/com/hand/hlz25720/feign/FeignProviderClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/feign/target/classes/com/hand/hlz25720/feign/impl/FeignError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringCloudHomework/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/SpringMybatisMVC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/handhlz25720.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/jetty.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/java/com/hand/hlz25720/bean/Complex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/java/com/hand/hlz25720/bean/Msg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/java/com/hand/hlz25720/bean/SsmItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/java/com/hand/hlz25720/bean/SsmItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/java/com/hand/hlz25720/controller/SsmItemController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/java/com/hand/hlz25720/handler/LocalDateTypeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/java/com/hand/hlz25720/mapper/SsmItemMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/java/com/hand/hlz25720/service/SsmItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/resources/mapper/SsmItemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-3.3.7-dist/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/build/build.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/build/build_standalone.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.hy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.rs-latin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.rs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/less/datetimepicker.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/minify.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v2/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v2/jquery/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/sample in bootstrap v3/jquery/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/screenshot/standard_day.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/screenshot/standard_day_meridian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/screenshot/standard_decade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/screenshot/standard_full.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/screenshot/standard_hour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/screenshot/standard_hour_meridian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/screenshot/standard_month.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/screenshot/standard_year.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/_coverage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/assets/coverage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/assets/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/assets/mock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/assets/qunit-logging.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/assets/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/assets/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/assets/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/run-qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/inline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/keyboard_navigation/2011.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/keyboard_navigation/2012.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/keyboard_navigation/all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/mouse_navigation/2011.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/mouse_navigation/2012.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/mouse_navigation/all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/suites/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/bootstrap-datetimepicker-master/tests/tests.min.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery插件库.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/www.jq22.com.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/bean/Complex$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/bean/Complex$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/bean/Complex$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/bean/Complex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/bean/Msg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/bean/SsmItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/bean/SsmItems.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/controller/SsmItemController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/handler/LocalDateTypeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/mapper/SsmItemMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/com/hand/hlz25720/service/SsmItemService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/mapper/SsmItemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/tmp/jsp/org/apache/jsp/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SpringMybatisMVC/target/tmp/jsp/org/apache/jsp/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../springcloud/springcloud.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../springcloud/sql.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../springcloud/这块.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/SSM考核.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/handhlz25720.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/jetty.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/mbg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/sql.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/Test/com/hand/hlz25720/MVCTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/Test/com/hand/hlz25720/MapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/bean/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/bean/DepartmentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/bean/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/bean/EmployeeExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/bean/Msg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/controller/DepartmentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/mapper/DepartmentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/mapper/EmployeeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/service/DepartmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/java/com/hand/hlz25720/test/MBGTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/resources/mapper/DepartmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/resources/mapper/EmployeeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/index1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/bootstrap-3.3.7-dist/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery插件库.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/www.jq22.com.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/ssm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/ssm表.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/META-INF/ssm.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/DepartmentExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/DepartmentExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/DepartmentExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/DepartmentExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/EmployeeExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/EmployeeExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/EmployeeExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/EmployeeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/bean/Msg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/controller/DepartmentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/controller/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/mapper/DepartmentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/mapper/EmployeeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/service/DepartmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/service/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/com/hand/hlz25720/test/MBGTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/mapper/DepartmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/mapper/EmployeeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/test-classes/com/hand/hlz25720/MVCTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/test-classes/com/hand/hlz25720/MapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/tmp/jsp/org/apache/jsp/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssm/target/tmp/jsp/org/apache/jsp/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/jetty.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/bootstrap-3.3.7-dist/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/jquery插件库.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/src/main/webapp/static/js/jquery-3.4.1/jquery-3.4.1/www.jq22.com.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/ssmcrub.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/target/tmp/jsp/org/apache/jsp/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/target/tmp/jsp/org/apache/jsp/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/target/tmp/jsp/org/apache/jsp/list_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ssmcrub/target/tmp/jsp/org/apache/jsp/list_jsp.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/com.redis.demo/target/" />
+    <ignored path="$PROJECT_DIR$/redisDemo/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redisDemo/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="13" column="71" lean-forward="true" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redisDemo/src/main/java/demo/redisConnectText.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redisDemo/src/main/java/demo/redisPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/redisDemo/src/main/java/demo/redisPool.java" />
+        <option value="$PROJECT_DIR$/redisDemo/src/main/java/demo/redisConnectText.java" />
+        <option value="$PROJECT_DIR$/redisDemo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/IDEA/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\IDEA\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="com.java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="451" />
+    <option name="y" value="39" />
+    <option name="width" value="1346" />
+    <option name="height" value="697" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="comjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comjava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comjava" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comjava" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comjava" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comjava" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comjava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comjava" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571834771536" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="redisConnectText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.redisConnectText" />
+      <module name="redisDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.redisConnectText" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37abc9c1-f806-4f2c-a339-42cb7407471d" name="Default Changelist" comment="" />
+      <created>1571209145944</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571209145944</updated>
+      <workItem from="1571209149026" duration="4096000" />
+      <workItem from="1571643597002" duration="635000" />
+      <workItem from="1571647875086" duration="71000" />
+      <workItem from="1571809886619" duration="2218000" />
+      <workItem from="1576487393425" duration="1316000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8336000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/redisDemo/src/main/java/demo/redisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisDemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="13" column="71" lean-forward="true" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redisDemo/src/main/java/demo/redisConnectText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,105 @@
+黄力章 25720
+一、选择题
+1、B
+2、B
+3、C
+4、B
+5、C
+6、D
+7、D
+
+二、简答题
+1、
+select hs.student_no "学号", hs.student_name "姓名"
+from hand_student hs 
+where hs.student_no in (
+	select hsc1.student_no
+	from hand_student_core hsc1, hand_student_core hsc2
+	where hsc1.student_no = hsc2.student_no 
+	group by hsc1.student_no , hsc1.course_no
+	having count(hsc1.course_no)<7
+	)
+order by hs.student_no
+
+2、
+select hs.student_no "学号", hs.student_name "姓名"
+from hand_student hs 
+where hs.student_no = (
+	select hsc1.student_no 
+	from hand_student_core hsc1, hand_student_core hsc2 	where hsc1.student_no = hsc2.student_no 
+		and hsc1.course_no ='c001' 
+		and hsc2.course_no='c002' 
+		and hsc1.core>hsc2.core
+	)
+order by hs.student_no
+
+3、
+逻辑串不起来
+
+select hsc1.course_no "学号",avg(hsc1.core) "平均分", count(hsc1.course_no) "总课程数"
+from hand_student_core hsc1,hand_student_core hsc2
+where hsc1.course_no||hsc1.student_no = hsc2.course_no||hsc2.student_no
+group by hsc1.course_no
+
+select count(hsc1.core) "及格课程数",hsc1.course_no "课程号"
+from hand_student_core hsc1,hand_student_core hsc2
+where hsc1.course_no||hsc1.student_no = hsc2.course_no||hsc2.student_no and hsc1.core>60
+group by hsc1.course_no
+
+6、
+select hs.student_no "学号", hs.student_name "姓名", hc.course_name "课程名称", hsc.core "分数" 
+from hand_course hc , 
+	hand_student_core hsc ,	
+	hand_student hs ,
+	(select MAX(hsc.core) b
+		from hand_course hc ,
+			hand_student_core hsc
+		where hc.course_no = hsc.course_no
+			and hc.course_name='J2SE') a
+where hc.course_no=hsc.course_no and hsc.student_no=hs.student_no and hsc.core>a.b
+
+8、
+select hs.student_name "姓名", hsc.core "分数"
+from hand_course hc , hand_student_core hsc , hand_student hs
+where hc.course_no = hsc.course_no
+and hsc.student_no = hs.student_no
+and hc.course_name='J2SE'
+and hsc.core between 60 and 70
+
+或者
+
+select hs.student_name "姓名", hsc.core "分数"
+from hand_course hc , hand_student_core hsc , hand_student hs
+where hc.course_no = hsc.course_no
+and hsc.student_no = hs.student_no
+and hc.course_name='J2SE'
+
+9、
+select hsc1.course_no "课程编号",hc.course_name "课程名称",avg(hsc1.core) "平均分"
+from hand_student_core hsc1,hand_student_core hsc2,hand_course hc
+where hsc1.course_no||hsc1.student_no = hsc2.course_no||hsc2.student_no
+and hsc1.course_no = hc.course_no
+group by hsc1.course_no,hc.course_name
+and hsc.core > 60 
+and hsc.core < 70
+
+13、
+
+select a.a1 "课程编号", a.a2 "课程名称", a.a3 "男生平均成绩", b.b3 "女生平均成绩"
+from (select hsc1.course_no a1,hc.course_name a2,avg(hsc1.core) a3
+from hand_student_core hsc1,hand_student_core hsc2,hand_course hc , hand_student hs
+where hsc1.course_no||hsc1.student_no = hsc2.course_no||hsc2.student_no
+and hsc1.course_no = hc.course_no
+and hs.student_no = hsc1.student_no
+and hs.student_gender='男'
+group by hsc1.course_no,hc.course_name) a 
+full join
+(select hsc1.course_no b1,hc.course_name b2,avg(hsc1.core) b3
+from hand_student_core hsc1,hand_student_core hsc2,hand_course hc , hand_student hs
+where hsc1.course_no||hsc1.student_no = hsc2.course_no||hsc2.student_no
+and hsc1.course_no = hc.course_no
+and hs.student_no = hsc1.student_no
+and hs.student_gender='女'
+group by hsc1.course_no,hc.course_name) b
+on a.a1 = b.b1 
+order by a.a1

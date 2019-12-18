@@ -1,0 +1,17 @@
+add方法出现异常
+异常的名称：java.lang.IllegalArgumentException
+异常的原因：null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mul方法出现异常
+异常的名称：java.lang.IllegalArgumentException
+异常的原因：null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+div方法出现异常
+异常的名称：java.lang.IllegalArgumentException
+异常的原因：null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sub方法出现异常
+异常的名称：java.lang.IllegalArgumentException
+异常的原因：null
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+本次测试出现4次异常

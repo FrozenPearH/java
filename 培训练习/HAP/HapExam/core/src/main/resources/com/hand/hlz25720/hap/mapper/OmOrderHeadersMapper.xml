@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.hlz25720.hap.mapper.OmOrderHeadersMapper">
+    <resultMap id="BaseResultMap" type="com.hand.hlz25720.hap.dto.OmOrderHeaders">
+        <result column="HEADER_ID" property="headerId" jdbcType="DECIMAL" />
+        <result column="ORDER_NUMBER" property="orderNumber" jdbcType="VARCHAR" />
+        <result column="COMPANY_ID" property="companyId" jdbcType="DECIMAL" />
+        <result column="ORDER_DATE" property="orderDate" jdbcType="DATE" />
+        <result column="ORDER_STATUS" property="orderStatus" jdbcType="VARCHAR" />
+        <result column="CUSTOMER_ID" property="customerId" jdbcType="DECIMAL" />
+        <result column="COMPANY_NAME" property="companyName" jdbcType="VARCHAR" />
+        <result column="CUSTOMER_NAME" property="customerName" jdbcType="VARCHAR" />
+        <result column="order_amount" property="orderAmount" jdbcType="DECIMAL" />
+    </resultMap>
+    <resultMap id="ExcelDaoChuDTOMap" type="com.hand.hlz25720.hap.dto.ExcelDaoChuDTO">
+        <result column="ORDER_NUMBER" property="orderNumber" jdbcType="VARCHAR" />
+        <result column="COMPANY_NAME" property="companyName" jdbcType="VARCHAR" />
+        <result column="CUSTOMER_NAME" property="customerName" jdbcType="VARCHAR" />
+        <result column="ORDER_DATE" property="orderDate" jdbcType="DATE" />
+        <result column="ORDER_STATUS" property="orderStatus" jdbcType="VARCHAR" />
+        <result column="ITEM_CODE" property="itemCode" jdbcType="VARCHAR" />
+        <result column="ITEM_DESCRIPTION" property="itemDescription" jdbcType="VARCHAR" />
+        <result column="ORDERD_QUANTITY" property="orderdQuantity" jdbcType="DECIMAL" />
+        <result column="UNIT_SELLING_PRICE" property="unitSellingPrice" jdbcType="DECIMAL" />
+        <result column="line_amount" property="lineAmount" jdbcType="DECIMAL" />
+    </resultMap>
+    <select id="daochu" parameterType="com.hand.hlz25720.hap.dto.OmOrderHeaders" resultMap="ExcelDaoChuDTOMap">
+        SELECT
+	ooh.ORDER_NUMBER,
+	oc.COMPANY_NAME,
+	ac.CUSTOMER_NAME,
+	ooh.ORDER_DATE,
+	ooh.ORDER_STATUS,
+    iii.ITEM_CODE,
+	iii.ITEM_DESCRIPTION,
+	ool.ORDERD_QUANTITY,
+	ool.UNIT_SELLING_PRICE,
+	(
+		ool.ORDERD_QUANTITY * ool.UNIT_SELLING_PRICE
+	) AS line_amount
+FROM
+	hap_om_order_headers ooh
+LEFT JOIN hap_om_order_lines ool ON ooh.header_id = ool.header_id
+LEFT JOIN hap_org_companys oc ON ooh.COMPANY_ID = oc.COMPANY_ID
+LEFT JOIN hap_ar_customers ac ON ooh.CUSTOMER_ID = ac.CUSTOMER_ID
+LEFT JOIN hap_inv_inventory_items iii ON ool.INVENTORY_ITEM_ID = iii.INVENTORY_ITEM_ID
+        <where>
+            <if test="headerId !=null and headerId != '' ">
+                <bind name="headerIdLike" value="'%'+headerId+'%'"/>
+                and ooh.header_id like  #{headerIdLike}
+            </if>
+            <if test="companyId !=null and companyId != '' ">
+                <bind name="companyIdLike" value="'%'+companyId+'%'"/>
+                and oc.company_id like  #{companyIdLike}
+            </if>
+            <if test="customerId !=null and customerId != '' ">
+                <bind name="customerIdLike" value="'%'+customerId+'%'"/>
+                and ac.customer_id like  #{customerIdLike}
+            </if>
+            <if test="orderNumber !=null and orderNumber != '' ">
+                <bind name="orderNumberLike" value="'%'+orderNumber+'%'"/>
+                and ooh.order_number like  #{orderNumberLike}
+            </if>
+            <if test="inventoryItemId !=null and inventoryItemId != '' ">
+                <bind name="inventoryItemIdLike" value="'%'+inventoryItemId+'%'"/>
+                and iii.inventory_item_id like  #{inventoryItemIdLike}
+            </if>
+            <if test="orderStatus !=null and orderStatus != '' ">
+                <bind name="orderStatusLike" value="'%'+orderStatus+'%'"/>
+                and ooh.order_status like  #{orderStatusLike}
+            </if>
+        </where>
+    </select>
+    <select id="selectByHeader" parameterType="com.hand.hlz25720.hap.dto.OmOrderHeaders" resultMap="BaseResultMap">
+        SELECT
+        ooh.COMPANY_ID,
+        ooh.CUSTOMER_ID,
+        ooh.HEADER_ID,
+        ooh.ORDER_NUMBER,
+        oc.COMPANY_NAME,
+        ac.CUSTOMER_NAME,
+        ooh.ORDER_DATE,
+        ooh.ORDER_STATUS,
+        SUM(
+        ool.ORDERD_QUANTITY * ool.UNIT_SELLING_PRICE
+        ) AS order_amount
+        FROM
+        hap_om_order_headers ooh
+        LEFT JOIN hap_om_order_lines ool ON ooh.header_id = ool.header_id
+        LEFT JOIN hap_org_companys oc ON ooh.COMPANY_ID=oc.COMPANY_ID
+        LEFT JOIN hap_ar_customers ac ON ooh.CUSTOMER_ID=ac.CUSTOMER_ID
+        <where>
+            <if test="headerId !=null and headerId != '' ">
+                <bind name="headerIdLike" value="'%'+headerId+'%'"/>
+                and ooh.header_id like  #{headerIdLike}
+            </if>
+            <if test="companyId !=null and companyId != '' ">
+                <bind name="companyIdLike" value="'%'+companyId+'%'"/>
+                and oc.company_id like  #{companyIdLike}
+            </if>
+            <if test="customerId !=null and customerId != '' ">
+                <bind name="customerIdLike" value="'%'+customerId+'%'"/>
+                and ac.customer_id like  #{customerIdLike}
+            </if>
+            <if test="orderNumber !=null and orderNumber != '' ">
+                <bind name="orderNumberLike" value="'%'+orderNumber+'%'"/>
+                and ooh.order_number like  #{orderNumberLike}
+            </if>
+            <if test="inventoryItemId !=null and inventoryItemId != '' ">
+                <bind name="inventoryItemIdLike" value="'%'+inventoryItemId+'%'"/>
+                and iii.inventory_item_id like  #{inventoryItemIdLike}
+            </if>
+            <if test="orderStatus !=null and orderStatus != '' ">
+                <bind name="orderStatusLike" value="'%'+orderStatus+'%'"/>
+                and ooh.order_status like  #{orderStatusLike}
+            </if>
+        </where>
+GROUP BY
+	ooh.HEADER_ID
+	order by ooh.HEADER_ID
+    </select>
+    <select id="maxHeaderId" resultType="Long">
+        select max(HEADER_ID) as maxHeaderId
+          from hap_om_order_headers
+    </select>
+    <delete id="deleteAll" parameterType="Long">
+        DELETE hsh.*,hsl.* from hap_om_order_headers hsh
+        LEFT JOIN hap_om_order_lines hsl ON hsh.header_id=hsl.header_id
+         WHERE hsh.header_id= #{headerId}
+    </delete>
+    <update id="submitOrderStatus" parameterType="Long">
+        UPDATE hap_om_order_headers
+SET ORDER_STATUS = "SUBMITED"
+WHERE HEADER_ID = #{headerId}
+    </update>
+    <update id="approvedOrderStatus" parameterType="Long">
+        UPDATE hap_om_order_headers
+SET ORDER_STATUS = "APPROVED"
+WHERE HEADER_ID = #{headerId}
+    </update>
+    <update id="rejectedOrderStatus" parameterType="Long">
+        UPDATE hap_om_order_headers
+SET ORDER_STATUS = "REJECTED"
+WHERE HEADER_ID = #{headerId}
+    </update>
+</mapper>

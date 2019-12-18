@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.hlz25720.hap.mapper.OmOrderLinesMapper">
+    <resultMap id="BaseResultMap" type="com.hand.hlz25720.hap.dto.OmOrderLines">
+        <result column="LINE_ID" property="lineId" jdbcType="DECIMAL" />
+        <result column="HEADER_ID" property="headerId" jdbcType="DECIMAL" />
+        <result column="LINE_NUMBER" property="lineNumber" jdbcType="DECIMAL" />
+        <result column="INVENTORY_ITEM_ID" property="inventoryItemId" jdbcType="DECIMAL" />
+        <result column="ORDERD_QUANTITY" property="orderdQuantity" jdbcType="DECIMAL" />
+        <result column="ORDER_QUANTITY_UOM" property="orderQuantityUom" jdbcType="VARCHAR" />
+        <result column="UNIT_SELLING_PRICE" property="unitSellingPrice" jdbcType="DECIMAL" />
+        <result column="DESCRIPTION" property="description" jdbcType="VARCHAR" />
+        <result column="COMPANY_ID" property="companyId" jdbcType="DECIMAL" />
+        <result column="ADDITION1" property="addition1" jdbcType="VARCHAR" />
+        <result column="ADDITION2" property="addition2" jdbcType="VARCHAR" />
+        <result column="ADDITION3" property="addition3" jdbcType="VARCHAR" />
+        <result column="ADDITION4" property="addition4" jdbcType="VARCHAR" />
+        <result column="ADDITION5" property="addition5" jdbcType="VARCHAR" />
+        <result column="ITEM_CODE" property="itemCode" jdbcType="VARCHAR" />
+        <result column="ITEM_DESCRIPTION" property="itemDescription" jdbcType="VARCHAR" />
+        <result column="ITEM_UOM" property="itemUom" jdbcType="VARCHAR" />
+        <result column="line_amount" property="lineAmount" jdbcType="DECIMAL" />
+    </resultMap>
+    <select id="selectByHeaderId" parameterType="com.hand.hlz25720.hap.dto.OmOrderLines" resultMap="BaseResultMap">
+        SELECT
+	ool.LINE_ID,
+	ool.LINE_NUMBER,
+	iii.INVENTORY_ITEM_ID,
+	iii.ITEM_CODE,
+	iii.ITEM_DESCRIPTION,
+	iii.ITEM_UOM,
+	ool.ORDERD_QUANTITY,
+	ool.UNIT_SELLING_PRICE,
+	(
+		ool.ORDERD_QUANTITY * ool.UNIT_SELLING_PRICE
+	) AS line_amount,
+	ool.DESCRIPTION,
+	ool.ADDITION1,
+	ool.ADDITION2,
+	ool.ADDITION3,
+	ool.ADDITION4,
+	ool.ADDITION5
+FROM
+	hap_om_order_lines ool
+LEFT JOIN hap_inv_inventory_items iii ON ool.INVENTORY_ITEM_ID = iii.INVENTORY_ITEM_ID
+<where>
+    <if test="headerId !=null and headerId != '' ">
+        <bind name="headerIdLike" value="'%'+headerId+'%'"/>
+        and ool.header_id like  #{headerIdLike}
+    </if>
+</where>
+order by ool.LINE_NUMBER
+    </select>
+    <select id="selectMaxLineNumber" parameterType="Long" resultType="Long">
+        SELECT ifnull(MAX(LINE_NUMBER)+1,1) as maxLineNumber
+FROM hap_om_order_lines
+WHERE HEADER_ID = #{headerId}
+    </select>
+
+</mapper>
